@@ -1,0 +1,441 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <!-- ####################################
+               Preference Keys
+    ######################################
+    TODO: Check what is needed -->
+    <string name="preference_name">
+        <xliff:g id="preference">shared_preferences_cwa</xliff:g>
+    </string>
+    <string name="preference_onboarding_completed">
+        <xliff:g id="preference">preference_onboarding_completed</xliff:g>
+    </string>
+    <string name="preference_reset_app">
+        <xliff:g id="preference">preference_reset_app</xliff:g>
+    </string>
+    <string name="preference_only_wifi">
+        <xliff:g id="preference">preference_only_wifi</xliff:g>
+    </string>
+    <string name="preference_tracing">
+        <xliff:g id="preference">preference_tracing</xliff:g>
+    </string>
+    <string name="preference_m_timestamp_diagnosis_keys_fetch">
+        <xliff:g id="preference">preference_m_timestamp_diagnosis_keys_fetch</xliff:g>
+    </string>
+    <string name="preference_m_timestamp_manual_diagnosis_keys_retrieval">
+        <xliff:g id="preference">preference_m_timestamp_manual_diagnosis_keys_retrieval</xliff:g>
+    </string>
+    <string name="preference_m_string_google_api_token">
+        <xliff:g id="preference">preference_m_string_google_api_token</xliff:g>
+    </string>
+    <string name="preference_notifications_enabled">
+        <xliff:g id="preference">preference_notifications_enabled</xliff:g>
+    </string>
+    <string name="preference_notifications_risk_enabled">
+         <xliff:g id="preference">preference_notifications_risk_enabled</xliff:g>
+    </string>
+    <string name="preference_notifications_test_enabled">
+         <xliff:g id="preference">preference_notifications_test_enabled</xliff:g>
+    </string>
+    <string name="preference_background_job_allowed">
+        <xliff:g id="preference">preference_background_job_enabled</xliff:g>
+    </string>
+    <string name="preference_mobile_data_allowed">
+        <xliff:g id="preference">preference_mobile_data_enabled</xliff:g>
+    </string>
+    <string name="preference_m_registration_token">
+        <xliff:g id="preference">preference_m_registration_token</xliff:g>
+    </string>
+    <string name="preference_initial_tracing_activation_time">
+        <xliff:g id="preference">preference_initial_tracing_activation_time</xliff:g>
+    </string>
+    <string name="preference_initial_result_received_time">
+        <xliff:g id="preference">preference_initial_result_received_time</xliff:g>
+    </string>
+    <string name="preference_risk_level_score">
+        <xliff:g id="preference">preference_risk_level_score</xliff:g>
+    </string>
+    <string name="preference_m_test_guid">
+        <xliff:g id="preference">preference_m_test_guid</xliff:g>
+    </string>
+    <string name="preference_m_is_allowed_to_submit_diagnosis_keys">
+        <xliff:g id="preference">preference_m_is_allowed_to_submit_diagnosis_keys</xliff:g>
+    </string>
+    <string name="preference_m_auth_code">
+        <xliff:g id="preference">preference_m_auth_code</xliff:g>
+    </string>
+    <string name="preference_database_password">
+        <xliff:g id="preference">preference_database_password</xliff:g>
+    </string>
+    <string name="preference_total_non_active_tracing">
+        <xliff:g id="preference">preference_total_non_active_tracing</xliff:g>
+    </string>
+    <string name="preference_last_non_active_tracing_timestamp">
+        <xliff:g id="preference">preference_last_non_active_tracing_timestamp</xliff:g>
+    </string>
+    <string name="preference_number_successful_submissions">
+        <xliff:g id="preference">preference_number_successful_submissions</xliff:g>
+    </string>
+    <string name="preference_teletan">
+        <xliff:g id="preference">preference_teletan</xliff:g>
+    </string>
+
+    <!-- ####################################
+                     Menu
+    ###################################### -->
+    <string name="menu_help">General</string>
+    <string name="menu_information">Información de la App</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_share">Comparte la App</string>
+
+    <!-- ####################################
+               Notification (nt)
+    ######################################
+    TODO MOST OF THIS SHOULD BE TRANSLATABLE -->
+    <string name="notification_channel_id">
+        <xliff:g id="notification_channel_id">de.rki.coronawarnapp.notification.exposureNotificationChannelId</xliff:g>
+    </string>
+    <string name="notification_name">
+        <xliff:g id="notification_name">ExposureNotification</xliff:g>
+    </string>
+    <string name="notification_description">
+        <xliff:g id="notification_description">Notifies user of potential exposure.</xliff:g>
+    </string>
+    <string name="notification_id">
+        <xliff:g id="notification_id">1</xliff:g>
+    </string>
+    <string name="notification_headline">Risk notification title</string>
+    <string name="notification_body">Risk notification content"</string>
+
+    <!-- ####################################
+                    Cards
+    ###################################### -->
+
+    <!-- Generic - used in multiple cards -->
+    <string name="risk_card_body_contact">Hasta ahora ningún encuentro riesgoso</string>
+    <string name="risk_card_body_contact_value">%1$s encuentros riesgosos</string>
+    <string name="risk_card_body_saved_days">%1$s de 14 días protocolizado</string>
+    <string name="risk_card_body_not_yet_fetched">Contactos no han sido confirmados.</string>
+    <string name="risk_card_body_time_fetched">Actualizado: %1$s</string>
+    <string name="risk_card_body_next_update">Próxima actualización en: %1$s</string>
+    <string name="risk_card_button_update">Actualizar</string>
+    <string name="risk_card_button_cooldown">Actualización en %1$s</string>
+    <string name="risk_card_button_enable_tracing">Activar determinación de riesgo</string>
+    <string name="risk_card_body_tracing_off">Active la determinación de riesgo, para actualizar su riesgo.</string>
+
+    <!-- LOW_RISK -->
+    <string name="risk_card_low_risk_headline">Riesgo bajo</string>
+    <!-- INCREASED_RISK -->
+    <string name="risk_card_increased_risk_headline">Riesgo alto</string>
+    <string name="risk_card_increased_risk_body_contact_last">%1$s días desde el último encuentro</string>
+    <!-- UNKNOWN_RISK -->
+    <string name="risk_card_unknown_risk_headline">Riesgo desconocido</string>
+    <string name="risk_card_unknown_risk_body">No podemos determinar el riesgo de infección, porque no ha activado la determinación de riesgo por el tiempo suficiente.</string>
+    <!-- NO_CALCULATION_POSSIBLE -->
+    <!-- TODO: no screens available -->
+    <string name="risk_card_no_calculation_possible_headline">Determinación de riesgo detenida.</string>
+    <string name="risk_card_no_calculation_possible_body_saved_risk">Última determinación:\n%1$s</string>
+    <!-- OUTDATED_RISK-->
+    <!-- TODO: no screens available -->
+    <string name="risk_card_outdated_risk_headline">Riesgo antigüo</string>
+    <string name="risk_card_outdated_risk_body">Su riesgo de infección no está actualizado, porque no ha activado la determinación de riesgo desde hace mucho tiempo. Por favor, actualice su riesgo. </string>
+    <!-- LOADING -->
+    <string name="risk_card_loading_headline">Prueba en curso</string>
+    <string name="risk_card_loading_body">Se están descargando y confirmando datos actuales. Esto puede tardar unos minutos.</string>
+    <!-- Test Result Card -->
+    <string name="test_result_card_headline">Su resultado:</string>
+    <string name="test_result_card_virus_name_text">SARS-CoV-2</string>
+    <string name="test_result_card_registered_at_text">Registrado el %tF</string>
+    <string name="test_result_card_status_negative">Negativo</string>
+    <string name="test_result_card_status_positive">Positivo</string>
+    <string name="test_result_card_status_invalid">No es posible la evaluación</string>
+    <string name="test_result_card_status_pending">El resultado no está disponible todavía</string>
+    <!-- Submission Status Card -->
+    <string name="submission_status_card_title_fetching">Buscando datos...</string>
+    <string name="submission_status_card_title_unregistered">Le han realizado la prueba?</string>
+    <string name="submission_status_card_title_pending">El resultado no está disponible todavía</string>
+    <string name="submission_status_card_title_available">Su resultado está disponible</string>
+    <string name="submission_status_card_body_fetching">El resultado está siendo actualizado</string>
+    <string name="submission_status_card_body_unregistered">Ayudenos a detener la cadena de infección e informe a otros.</string>
+    <string name="submission_status_card_body_pending">La evaluación dura entre 1–3 días.</string>
+    <string name="submission_status_card_body_invalid">Su prueba no ha podido ser evaludada.</string>
+    <string name="submission_status_card_body_positive">Ha sido evaluado con resultado positivo para SARS-CoV-2.</string>
+    <string name="submission_status_card_body_negative">Ha sido evaluado con resultado negativo para SARS-CoV-2.</string>
+    <string name="submission_status_card_button_unregistered">Informar &amp; participar</string>
+    <string name="submission_status_card_button_show_results">Mostrar resultado</string>
+    <string name="submission_status_card_button_show_details">Mostrar detalles</string>
+
+    <!-- ####################################
+                    Main
+    ###################################### -->
+    <string name="main_title">General</string>
+    <!-- About COVID-19 -->
+    <string name="main_about_headline">Preguntas frecuentes</string>
+    <string name="main_about_body">Encuentre respuestas confiables e información concreta de como se puede proteger y ayudar a otros. </string>
+
+    <!-- ####################################
+                   Main - Share
+    ###################################### -->
+    <string name="main_share_title">Compartir Corona-Warn-App</string>
+    <string name="main_share_headline">Luchemos juntos contra el corona</string>
+    <string name="main_share_body">Entre más personas participen, más rápido será parar la cadena de infección. Invite a su familia, amigos y conocidos para descargar la App!</string>
+    <string name="main_share_button">Enviar link de descarga</string>
+    <string name="main_share_message">
+        Cuentales a todos!<xliff:g id="line_break">\n</xliff:g>
+        <xliff:g id="hashtag">#</xliff:g>aplanemosLaCurvaJuntos<xliff:g id="line_break">\n</xliff:g>
+        Play Store (Android): <xliff:g id="link_play_store">https://play.google.com/</xliff:g><xliff:g id="line_break">\n</xliff:g>
+        App Store (iOS): <xliff:g id="link_app_store">https://www.apple.com/ios/app-store/</xliff:g><xliff:g id="line_break">\n</xliff:g>
+    </string>
+    <string name="sm_result_button_dialog_close">OK</string>
+
+
+    <!-- ####################################
+               Risk Details
+    ###################################### -->
+    <string name="risk_details_headline_behavior">Comportese de manera correcta</string>
+    <string name="risk_details_behavior_body_stay_home">Permanezca en casa</string>
+    <string name="risk_details_behavior_body_avoid_contact">Evite contacto social</string>
+    <string name="risk_details_behavior_body_contact_doctor">Para preguntas acerca a sintomas, posibilidades de pruebas y demás medidas de segregación comuníquese por favor con:</string>
+    <string name="risk_details_behavior_body_wash_hands">Lave sus manos</string>
+    <string name="risk_details_behavior_body_wear_mask">Póngase una mascarilla</string>
+    <string name="risk_details_behavior_body_stay_away">Mantenga 2 metros de distancia con las personas</string>
+    <string name="risk_details_behavior_body_cough_sneeze">Tosa y estornuda en su codo</string>
+    <string name="risk_details_behavior_increased_body_1">- Su médico/médica de cabecera</string>
+    <string name="risk_details_behavior_increased_body_2">- Servicio de emergencia (Tel: 116117)</string>
+    <string name="risk_details_behavior_increased_body_3">- Su departamento de salud</string>
+    <string name="risk_details_headline_infection_risk">Riesgo de infección</string>
+    <string name="risk_details_body_infection_risk">Así es determinado su riesgo de infección</string>
+    <string name="risk_details_button_update">@string/risk_card_button_update</string>
+    <string name="risk_details_button_enable_tracing">@string/risk_card_button_enable_tracing</string>
+    <!-- TODO check if needed -->
+    <string name="main_government_headline">Llamar al departamento de salud</string>
+
+    <!-- ####################################
+              Onboarding
+    ###################################### -->
+    <string name="onboarding_title">Inducción</string>
+    <string name="onboarding_image_description">IS MISSING</string>
+    <string name="onboarding_button_finish">Aceptar</string>
+    <string name="onboarding_button_disable">No activar</string>
+    <string name="onboarding_button_next">Siguiente</string>
+    <string name="onboarding_button_start">Vamos</string>
+    <string name="onboarding_button_back_description">Atrás</string>
+    <!-- 1 Together -->
+    <string name="onboarding_headline">Juntos contra el Corona</string>
+    <string name="onboarding_subtitle">@string/lorem_ipsum</string>
+    <string name="onboarding_body">@string/lorem_ipsum</string>
+    <string name="onboarding_body_emphasized">@string/lorem_ipsum</string>
+    <!-- 2 Privacy -->
+    <string name="onboarding_privacy_headline">Datenschutz</string>
+    <string name="onboarding_privacy_subtitle">Verantwortliche Stelle im Sinne des Art. 4 Abs. 7 DSGVO: \n \n Robert Koch-Institut\nNordufer 20\n13353 Berlin</string>
+    <string name="onboarding_privacy_body">@string/lorem_ipsum</string>
+    <string name="onboarding_privacy_body_emphasized">@string/lorem_ipsum</string>
+    <!-- 3 Permission -->
+    <string name="onboarding_tracing_headline">Cómo usted posibilita el reconomiento de riesgo</string>
+    <string name="onboarding_tracing_subtitle">@string/lorem_ipsum</string>
+    <string name="onboarding_tracing_body">@string/lorem_ipsum</string>
+    <string name="onboarding_tracing_body_emphasized">@string/lorem_ipsum</string>
+    <string name="onboarding_tracing_dialog_headline">Berechtigung</string>
+    <string name="onboarding_tracing_dialog_body">Corona-Warn-App no puede recibir o enviar notificaciones de riesgo del COVID-19. Puede activar esta función cuando lo desee.</string>
+    <string name="onboarding_tracing_dialog_button_positive">Seguir de todos modos</string>
+    <string name="onboarding_tracing_dialog_button_negative">Atrás</string>
+    <!-- 4 Tracing -->
+    <string name="onboarding_test_headline">Ha sido evaluado positivo con SARs-Cov-2?</string>
+    <string name="onboarding_test_subtitle">@string/lorem_ipsum</string>
+    <string name="onboarding_test_body">@string/lorem_ipsum</string>
+    <string name="onboarding_test_body_emphasized">Activar geolocalización</string>
+    <!-- 5 Datashare -->
+    <string name="onboarding_notifications_headline">Recibir alertas, conocer riesgos.</string>
+    <string name="onboarding_notifications_subtitle">@string/lorem_ipsum</string>
+    <string name="onboarding_notifications_body">@string/lorem_ipsum</string>
+    <string name="onboarding_notifications_body_emphasized">@string/lorem_ipsum</string>
+    <string name="onboarding_notifications_dialog_headline">Permiso</string>
+    <string name="onboarding_notifications_dialog_body">Las notificaciones para la Corona-Warn-App han sido desactivadas. Para mantenerlo informado siempre acerca de su estado actual sería de mucha ayuda si activa sus notificaciones. </string>
+    <string name="onboarding_notifications_dialog_button_positive">Configuración</string>
+    <string name="onboarding_notifications_dialog_button_negative">Seguir de todos modos</string> <!--<string name="onboarding_privacy_body_emphasized_address"></string> -->
+
+    <!-- ####################################
+                  Settings
+    ###################################### -->
+    <string name="settings_title">Configuración</string>
+    <string name="settings_on">Encendido</string>
+    <string name="settings_off">Apagado</string>
+    <!-- Tracing -->
+    <string name="settings_tracing_title">Determinación de riesgo</string>
+    <string name="settings_tracing_headline">Activar la grabación de sus encuentros.</string>
+    <string name="settings_tracing_body_description">Permitir la captura y envío Covid-19-Zufalls-IDs.</string>
+    <string name="settings_tracing_body_active">Determinación de riesgo activado</string>
+    <string name="settings_tracing_body_inactive">Determinación de riesgo detenido</string>
+    <string name="settings_tracing_body_active_description">La determinación de riesgo está activada. Una evaluación de riesgo confiable solo puede ser determinada con una permanente determinación de riesgo activada.</string>
+    <string name="settings_tracing_body_inactive_description">La determinación de riesgo está detenida. Una evaluación de riesgo confiable solo puede ser determinada con una permanente determinación de riesgo activada.</string>
+    <string name="settings_tracing_body_text">@string/lorem_ipsum</string>
+    <!-- Notifications -->
+    <string name="settings_notifications_title">Mensajes</string>
+    <string name="settings_notifications_headline_active">Quiere activar mensajes para su estado de riesgo de Covid-19?</string>
+    <string name="settings_notifications_headline_inactive">Los mensajes están desactivadas</string>
+    <string name="settings_notifications_body_description">Permitir mensajes automáticos para el estado de riesgo de Covid-19.</string>
+    <string name="settings_notifications_body_active">Establezca acerca de que temas quiere ser informado.</string>
+    <string name="settings_notifications_body_inactive">Para activar los mensajes, debe permitir los mensajes para Corona-Warn-App en la configuración de su teléfono.</string>
+    <string name="settings_notifications_subtitle_notification">@string/settings_notifications_title</string>
+    <string name="settings_notifications_subtitle_update_risk">Cambiar su riesgo de infección</string>
+    <string name="settings_notifications_subtitle_update_test">Estado de sus pruebas de COVID-19</string>
+    <string name="settings_notifications_subtitle_update_news">Actualizaciones de COVID-19</string>
+    <string name="settings_notifications_subtitle_update_app">Nuevas funciones de la App</string>
+    <string name="settings_notifications_button_open_settings">Abrir configuración</string>
+    <!-- Reset-->
+    <string name="settings_reset_title">Restablecer aplicación.</string>
+    <string name="settings_reset_headline">Está seguro de que desea restablecer la aplicación?</string>
+    <string name="settings_reset_body">@string/lorem_ipsum</string>
+    <string name="settings_reset_button_positive">@string/settings_reset_title</string>
+    <string name="settings_reset_button_negative">Cancelar</string>
+
+    <!-- ####################################
+               App Information
+    ###################################### -->
+    <string name="information_title">Información</string>
+    <string name="information_about_title">Acerca de la App</string>
+    <string name="information_about_headline">Luchar juntos contra el Corona</string>
+    <string name="information_privacy_title">Información de protección de datos</string>
+    <string name="information_privacy_headline">@string/lorem_ipsum</string>
+    <string name="information_terms_title">Condiciones de uso</string>
+    <string name="information_terms_headline">@string/lorem_ipsum</string>
+    <string name="information_contact_title">Contácto</string>
+    <string name="information_contact_headline">Cómo podemos ayudarle</string>
+    <string name="information_help_title">Preguntas frencuentas</string>
+    <string name="information_technical_title">Aviso legal</string>
+    <string name="information_technical_headline">FTP/SFTP/FTPS client uses libs</string>
+    <string name="information_legal_title">Aviso legal</string>
+    <string name="information_legal_headline">Director</string>
+    <string name="information_legal_body">SAP Deutschland SE &amp; Co. KG \n \nHauptsitz: \nSAP Deutschland SE &amp; Co. KG \nHasso-Plattner-Ring 7 \n69190 Walldorf </string>
+
+    <!-- ####################################
+             Submission
+             TODO: rename if screens are available
+    ###################################### -->
+    <!-- Permission Rationale Dialog -->
+    <string name="submission_qr_code_scan_permission_rationale_dialog_headline">Es necesario el acceso a la cámara</string>
+    <string name="submission_qr_code_scan_permission_rationale_dialog_body">@string/lorem_ipsum</string>
+
+    <string name="submission_qr_code_scan_permission_rationale_dialog_button_positive">Permitir</string>
+    <string name="submission_qr_code_scan_permission_rationale_dialog_button_negative">Denegar</string>
+    <!-- Permission Denied Dialog -->
+    <string name="submission_qr_code_scan_permission_denied_dialog_headline">No hay permiso al uso de la cámara</string>
+    <string name="submission_qr_code_scan_permission_denied_dialog_body">@string/lorem_ipsum</string>
+
+    <string name="submission_qr_code_scan_permission_denied_dialog_button_positive">Atrás</string>
+    <!-- QR Code Scan Successful Dialog -->
+    <string name="submission_qr_code_scan_successful_dialog_headline">Escaneado exitoso</string>
+    <string name="submission_qr_code_scan_successful_dialog_body">@string/lorem_ipsum</string>
+
+    <string name="submission_qr_code_scan_successful_dialog_button_positive">Registrar</string>
+    <string name="submission_qr_code_scan_successful_dialog_button_negative">Cancelar</string>
+    <!-- QR Code Scan Invalid Dialog -->
+    <string name="submission_qr_code_scan_invalid_dialog_headline">Código QR inválido</string>
+    <string name="submission_qr_code_scan_invalid_dialog_body">@string/lorem_ipsum</string>
+
+    <string name="submission_qr_code_scan_invalid_dialog_button_positive">Intentar de nuevo</string>
+    <string name="submission_qr_code_scan_invalid_dialog_button_negative">Cancelar</string>
+    <!-- QR Code Scan Screen -->
+    <string name="submission_qr_code_scan_body">Ponga el código QR dentro del marco.</string>
+    <!-- Register Device Screen -->
+    <string name="submission_register_device_headline">Registrar dispositivo</string>
+    <string name="submission_register_device_body">@string/lorem_ipsum</string>
+    <!-- Submission Test Result -->
+    <string name="submission_test_result_headline">Resultado de le prueba</string>
+    <string name="submission_test_result_subtitle">Información en curso:</string>
+    <string name="submission_test_result_button_finish">Cerrar</string>
+
+    <string name="submission_test_result_steps_added_heading">Prueba agregada exitosamente</string>
+    <string name="submission_test_result_steps_added_body">Su prueba se ha guardado en la Corona-Warn-App.</string>
+
+    <string name="submission_test_result_pending_steps_waiting_heading">Los resultados de la prueba no están disponibles.</string>
+    <string name="submission_test_result_pending_steps_waiting_body">El resultado de la prueba no está disponible aún. Normalmente dura entre 1–3 días.</string>
+    <string name="submission_test_result_pending_refresh_button">Actualizar</string>
+    <string name="submission_test_result_pending_remove_test_button">Borrar prueba</string>
+
+    <string name="submission_test_result_negative_steps_negative_heading">Resultado de la prueba: Negativo</string>
+    <string name="submission_test_result_negative_steps_negative_body">Su resultado de la prueba fue verificado exitosamente como “Negativ”. Por favor elimine la prueba de nuevo de la Corona-Warn-App, para que pueda agregar una nueva prueba. </string>
+    <string name="submission_test_result_negative_remove_test_button">Borrar prueba</string>
+
+    <string name="submission_test_result_positive_steps_positive_heading">Resultado de la prueba: Positivo</string>
+    <string name="submission_test_result_positive_steps_positive_body">Su resultado de la prueba fue verificado exitosamente como “Positivo”.</string>
+    <string name="submission_test_result_positive_steps_warning_others_heading">Informar a otro</string>
+    <string name="submission_test_result_positive_steps_warning_others_body">Compartir su número aleatorio, para poder alarmar a los demás.</string>
+    <string name="submission_test_result_positive_continue_button">Siguiente</string>
+
+    <string name="submission_test_result_invalid_steps_invalid_heading">Error en la prueba</string>
+    <string name="submission_test_result_invalid_steps_invalid_body">Hubo un problema en la evaluación de su prueba. Por favor contacte a su departamento de salud para recibir más información. Por favor elimine la prueba de nuevo de la Corona-Warn-App, para que pueda agregar una nueva prueba..</string>
+    <string name="submission_test_result_invalid_remove_test_button">Borrar prueba</string>
+    <!-- Submission Tan -->
+    <string name="submission_tan_title">Ingresar TAN</string>
+    <string name="submission_tan_body">Por favor ingrese el TAN de su diagnóstico. El código TAN son 7 carácteres. No hay distinción entre mayúsculas y minúsculas.</string>
+    <string name="submission_tan_button_text">Siguiente</string>
+    <!-- Submission Intro -->
+    <string name="submission_intro_title">Ha realizado la prueba del Corona Virus?</string>
+    <string name="submission_intro_headline">Así funciona el sistema Corona-Warn</string>
+    <string name="submission_intro_text_a">Para que la Corona-Warn-App funciona, es requerido la colaboración voluntaria de todos las personas testeadas positivas para Corona virus.</string>
+    <string name="submission_intro_text_b">@string/lorem_ipsum</string>
+    <string name="submission_intro_button_next">Siguiente</string>
+    <!-- sm Notification -->
+    <string name="sm_result_dialog_headline">Gracias por la colaboración!</string>
+    <string name="sm_result_dialog_body">Su diagnóstico verificado ha sido enviado de manera anónima.</string>
+    <!-- sm Dispatcher -->
+    <string name="submission_dispatcher_headline">Opciones</string>
+
+    <string name="submission_dispatcher_subheadline">Que información debe ser presentada?</string>
+    <string name="submission_dispatcher_card_qr">Documento con código QR</string>
+    <string name="submission_dispatcher_qr_card_text">Verifique su prueba, en la que escanee el código QR del resultado de su prueba.</string>
+
+    <string name="submission_dispatcher_card_tan_code">Código TAN</string>
+    <string name="submission_dispatcher_tan_code_card_text">Verifique su prueba con el ingreso manual de su código TAN</string>
+
+    <string name="submission_dispatcher_card_tan_tele">Consultar el TAN telefónicamente</string>
+    <string name="submission_dispatcher_tan_tele_card_text">Por favor llamenos, si ha sido testeado positivo.</string>
+
+    <!-- Submission Positive Other Warning -->
+    <string name="submission_positive_other_warning_title">Informar a otros</string>
+    <string name="submission_positive_other_warning_headline">Así continua:</string>
+    <string name="submission_positive_other_warning_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="submission_positive_other_warning_data_security_body">+Texto de seguridad de datos</string>
+    <string name="submission_positive_other_warning_button">Siguiente</string>
+    <string name="submission_positive_dialog_confirmation_title">Compartir IDs aleatorios con "Corona-Warn"?</string>
+    <string name="submission_positive_dialog_confirmation_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="submission_positive_dialog_confirmation_positive">Permitir</string>
+    <string name="submission_positive_dialog_confirmation_negative">Denegar</string>
+    <!-- Submission Done -->
+    <string name="submission_done_headline">Muchas gracias!</string>
+    <string name="submission_done_body">Usted ha realizado una gran contribución! Gracias a su colaboración podremos informar a otros y reaccionar adecuadamente. </string>
+    <string name="submission_done_subtitle">Por favor tener en cuenta:</string>
+    <string name="submission_done_contagious">Usted está infectado.</string>
+    <string name="submission_done_isolate">Por favor aíslese de las demás personas.</string>
+    <string name="submission_done_button_done">Listo</string>
+
+
+    <!-- ####################################
+           Just for Development
+    ###################################### -->
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <!-- TODO test fragment only - remove after test fragment is deleted-->
+    <string name="menu_test_api">Test API</string>
+    <string name="menu_test_notification">Test Notification</string>
+    <string name="test_api_button_api_launch">Android API Test(Manual Test)</string>
+    <string name="test_api_button_start">Start (Broadcast/Receive Bluetooth)</string>
+    <string name="test_api_button_get_exposure_keys">Get Exposure keys (my keys history from api)</string>
+    <string name="test_api_button_share_my_keys">Share my keys via Email</string>
+    <string name="test_api_button_enter_other_keys">Submit Exposure Key</string>
+    <string name="test_api_button_show_qr_code">Show QR Code</string>
+    <string name="test_api_button_submit_keys">Submit keys to Server</string>
+    <string name="test_api_button_scan_qr_code">Scan Exposure Key</string>
+    <string name="test_api_button_check_exposure">Check Exposure Summary</string>
+    <string name="test_api_exposure_summary_headline">Exposure summary</string>
+    <string name="test_api_body_daysSinceLastExposure">Days since last exposure: %1$s</string>
+    <string name="test_api_body_attenuation">Attenuation Durations in Minutes: %1$s</string>
+    <string name="test_api_body_summation_risk">Summation Risk Score: %1$s</string>
+    <string name="test_api_body_matchedKeyCount">Matched key count: %1$s</string>
+    <string name="test_api_body_maximumRiskScore">Maximum risk score %1$s</string>
+    <string name="test_api_body_my_keys">My keys (count: %1$d) </string>
+    <string name="test_api_body_other_keys">Other key </string>
+    <string name="test_api_calculate_risk_level">Calculate Risk Level</string>
+
+</resources>
